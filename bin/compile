@@ -375,6 +375,7 @@ if [[ -n "$NEW_RELIC_LICENSE_KEY" ]]; then
     tail -qF -n 0 /tmp/heroku.ext-newrelic.newrelic-daemon.${PORT}.log 1>&2 &
 fi
 EOF
+php app/console assetic:dump --env=prod --no-debug
 
 if [[ -n "${NEW_RELIC_CONFIG_FILE:-}" ]]; then
     if [[ ! -f "${NEW_RELIC_CONFIG_FILE}" ]]; then
