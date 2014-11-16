@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Install Compass
 status "Installing Compass"
-  HOME="$cache_dir/ruby" gem install sass --user-install --no-rdoc --no-ri
-  HOME="$cache_dir/ruby" gem install compass --user-install --no-rdoc --no-ri
+  gem install sass --user-install --no-rdoc --no-ri
+  gem install compass --user-install --no-rdoc --no-ri
   #!/usr/bin/env bash
 PATH=$PATH:/app/vendor/bundle/bin
 # bin/compile <build-dir> <cache-dir> <env-dir>
